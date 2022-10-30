@@ -1,0 +1,135 @@
+/*  Setam familia fontului */
+html{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5em;
+    background-image:url('./resurces/bck\ \(2\).jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: 900;
+    overflow-y: hidden;
+    
+}
+ 
+body{
+    margin:0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center; 
+    overflow: hidden;
+  }
+
+.calculator{
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(240, 248, 255,0.6);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+/* Setam dimensiunea unui buton */
+button {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: rgba(158, 154, 154, 0.8);
+    font-size: 1.3em;
+    margin: 5px;
+    align-items: center;
+    justify-content: center; 
+  }
+  
+  /* Fiecare linie e stilizata la fel */
+  .line {
+    display: flex;
+  }
+  #multiply , #add ,  #subtract , #division{
+    background-color: rgb(255, 132, 0);
+  }
+ 
+.result{
+    /* border: 1px solid red; */
+    padding: 10px 10px;
+    margin: 5px;
+    background-color:rgba(240, 248, 255,0.8);
+    border-radius: 15px;
+    text-align: center;
+}
+h1{
+    padding: 20px;
+    margin: 0;
+    letter-spacing: 1px;
+ 
+    text-align: center;
+}
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+ .calculator{
+    width: 350px;
+    padding: 10px;
+    overflow: hidden;
+}}
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+ .calculator{
+        padding: 10px;
+}
+
+  h1{
+    padding: 5 px;
+    margin: 0;
+    letter-spacing: 1px;
+ 
+    text-align: center;
+}
+.result{
+    padding: 2px 10px;
+    margin: 2px;
+    background-color:rgba(240, 248, 255,0.8);
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1em;
+}
+}
+ /*Medium devices (landscape tablets, 768px and up)
+ @media only screen and (min-width: 768px) { 
+     .calculator{
+    padding: 10px;
+    }
+    button {
+width: 50px;
+height: 50px;
+border-radius: 50px;
+background-color: rgba(158, 154, 154, 0.8);
+font-size: 1em;
+margin:      5px;
+align-items: center;
+justify-content: center; 
+    }
+    h1{
+padding: 5px;
+margin: 0;
+letter-spacing: 1px;
+
+text-align: center;
+    }
+    .result{
+    padding: 2px 10px;
+    margin: 2px;
+    background-color:rgba(240, 248, 255,0.8);
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1em;
+    }
+} 
+ 
+ /* Large devices (laptops/desktops, 992px and up)
+ @media only screen and (min-width: 992px) {...}
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ /* @media only screen and (min-width: 1200px) {...}   */
